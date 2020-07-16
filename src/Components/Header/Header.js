@@ -3,8 +3,8 @@ import axios from 'axios';
 import './Header.css';
 
 export default class Header extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       username: '',
       password: '',
