@@ -5,7 +5,7 @@ CREATE TABLE users
   id SERIAL PRIMARY KEY,
   is_admin BOOLEAN default false,
   username VARCHAR(120),
-  hash text
+  hash TEXT
 );
 
 INSERT INTO users
@@ -21,8 +21,8 @@ DROP TABLE IF EXISTS treasures;
 CREATE TABLE treasures
 (
   id SERIAL PRIMARY KEY,
-  image_url varchar(120),
-  user_id int
+  image_url VARCHAR(120),
+  user_id INT
 );
 
 INSERT INTO treasures
